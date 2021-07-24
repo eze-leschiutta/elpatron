@@ -8,9 +8,6 @@ public class GrabadorClienteSQL implements GrabadorCliente {
         var em = new ConectorJPA().getEntityManager();
 
         try {
-            if (c.modelo.equals("fallo")) {
-                throw new Exception("No se pudo grabar");
-            }
             var tx = em.getTransaction();
             tx.begin();
             em.merge(c);
