@@ -14,6 +14,7 @@ public class GrabadorClienteSQL implements GrabadorCliente {
             var tx = em.getTransaction();
             tx.begin();
             em.merge(c);
+            em.flush();
             tx.commit();
         }
         catch (Throwable ex) {
