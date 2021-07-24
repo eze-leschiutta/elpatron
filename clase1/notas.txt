@@ -1,0 +1,93 @@
+Notas de patrones de diseño
+
+Persona 
+
+Cliente extends Persona {}
+Comrpador extends Persona {}
+
+class Cliente {
+   Persona persona;
+   BitCoinAccount bitcointAccount;
+}
+
+class Comprador {
+   Persona persona;
+   CasillaDeCorreo;
+}
+
+Herencia.
+
+Uso de herencia que es la inversion de control.
+
+React - onComponentStart
+Servlet - doGet, doPost
+ControllerBase
+
+----------------------------------------------------------------------
+
+Encapsulamiento
+
+Usuario {
+   public String id;
+   public String nombre;
+   public String plan;
+   public Integer importe;
+}
+
+IValidadorCliente o ValidadorCliente
+
+class ValidadorClienteHiptecta {
+   validar(cliente) {
+   }
+}
+ValidadorClienteOtrosProductos(Cliente)
+
+validarCliente(cliente, IValidadorCliente validador) {
+   validador.validar(cliente);
+}
+
+----------------------------------------------------------------------
+
+cliente o contexto -------------------> PROBLEMA A DESARROLAR 
+                                        ES EL PATRON 
+
+
+----------------------------------------------------------------------
+
+Funciones puras.
+
+Que es ? Si yo prometo un tipo de dato Integer tengo que retonar Integer
+
+Si hay calculos involucrados, y deviene una funcion pura ?
+
++    2 4 -> 6
++    2 4 -> 6
+iva  100 -> 121
+-    2 3 -> -1
+/    5 0 -> Optional<Integer>  Result<Integer> MyBe<Integer> Either<Integer, Error>
+
+Adaptativo
+Resilente
+
+Adaptative code in c# Robert Martin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

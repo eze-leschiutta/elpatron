@@ -1,0 +1,1 @@
+java -jar build\libs\decorator-chain.jar edu.it.App
